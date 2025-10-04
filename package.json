@@ -1,0 +1,30 @@
+{
+  "name": "phishing-url-checker",
+  "version": "1.0.0",
+  "description": "Modern web frontend for phishing URL detection - Educational cybersecurity tool",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=/index.html"
+  },
+  "keywords": [
+    "phishing",
+    "security",
+    "url-checker",
+    "cybersecurity",
+    "education",
+    "web-app"
+  ],
+  "author": "umyhabibaa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umyhabibaa/phishing-url-checker.git"
+  },
+  "homepage": "https://github.com/umyhabibaa/phishing-url-checker#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}
