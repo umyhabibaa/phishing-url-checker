@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing URL Checker - Educational Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>Phishing URL Checker</h1>
+                </div>
+                <p class="subtitle">Educational tool to help identify suspicious URLs</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="checker-card">
+                <div class="card-header">
+                    <h2>Enter URL to Check</h2>
+                    <p>Paste any URL below to analyze it for potential phishing indicators</p>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <i class="fas fa-link input-icon"></i>
+                        <input 
+                            type="url" 
+                            id="urlInput" 
+                            placeholder="https://example.com" 
+                            class="url-input"
+                        >
+                        <button id="clearBtn" class="clear-btn" title="Clear">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <button id="checkBtn" class="check-btn">
+                        <i class="fas fa-search"></i>
+                        Check URL
+                    </button>
+                </div>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <div class="result-header">
+                        <span id="resultIcon" class="result-icon"></span>
+                        <span id="resultTitle" class="result-title"></span>
+                    </div>
+                    <div id="resultContent" class="result-content"></div>
+                </div>
+            </div>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>What We Check</h3>
+                    <ul>
+                        <li>IP addresses instead of domains</li>
+                        <li>Too many subdomains</li>
+                        <li>Suspicious keywords</li>
+                        <li>Trusted domain verification</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Educational Purpose</h3>
+                    <p>This tool is designed for educational purposes to help users learn about phishing detection techniques. Always verify URLs through official channels.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Stay Safe</h3>
+                    <p>Never enter personal information on suspicious websites. When in doubt, contact the organization directly through their official channels.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Phishing URL Checker - Educational Tool</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
